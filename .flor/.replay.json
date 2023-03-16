@@ -1,8 +1,8 @@
 {
     "NAME": "smallerModel",
-    "TSTAMP": "2023-03-16T19:14:29.json",
+    "TSTAMP": "2023-03-16T19:15:07.json",
     "device": "cuda",
-    "hidden_size": 250,
+    "hidden_size": 125,
     "batch_size": 100,
     "lr": 0.001,
     "PROJID": "ml_tutorial_flor.shadow.slim",
