@@ -14,7 +14,7 @@ device = flor.log(
 
 # Hyper-parameters
 input_size = 784
-hidden_size = flor.log("hidden_size", 500)
+hidden_size = flor.log("hidden_size", 250)
 num_classes = 10
 num_epochs = 5
 batch_size = flor.log("batch_size", 100)
