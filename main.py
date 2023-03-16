@@ -17,7 +17,7 @@ input_size = 784
 hidden_size = flor.log("hidden_size", 125)
 num_classes = 10
 num_epochs = 5
-batch_size = flor.log("batch_size", 100)
+batch_size = flor.log("batch_size", 64)
 learning_rate = flor.log("lr", 0.01)
 
 # MNIST dataset

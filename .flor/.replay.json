@@ -1,9 +1,9 @@
 {
-    "NAME": "increaseLR",
-    "TSTAMP": "2023-03-16T19:16:23.json",
+    "NAME": "smallerBatchSize",
+    "TSTAMP": "2023-03-16T19:17:16.json",
     "device": "cuda",
     "hidden_size": 125,
-    "batch_size": 100,
+    "batch_size": 64,
     "lr": 0.01,
     "PROJID": "ml_tutorial_flor.shadow.slim",
     "EPOCHS": 5
