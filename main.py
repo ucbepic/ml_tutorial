@@ -5,6 +5,7 @@ import torchvision.transforms as transforms
 import torch.utils.data as torchdata
 
 import flor
+from flor import MTK as Flor
 
 # Device configuration
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -56,10 +57,12 @@ model = NeuralNet(input_size, hidden_size, num_classes).to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
+Flor.checkpoints(model, optimizer)
+
 # Train the model
 total_step = len(train_loader)
-for epoch in range(num_epochs):
-    for i, (images, labels) in enumerate(train_loader):
+for epoch in Flor.loop(range(num_epochs)):
+    for i, (images, labels) in Flor.loop(enumerate(train_loader)):
         # Move tensors to the configured device
         images = images.reshape(-1, 28 * 28).to(device)
         labels = labels.to(device)
