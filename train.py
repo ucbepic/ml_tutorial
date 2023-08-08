@@ -9,11 +9,9 @@ import random
 import flor
 
 # Device configuration
-try:
-    device = torch.device("cuda" if torch.cuda.is_available() else "mps")
-except:
-    device = torch.device("cpu")
-
+device = torch.device(
+    flor.arg("device", "cuda" if torch.cuda.is_available() else "cpu")
+)
 
 seed = flor.arg("seed", default=random.randint(1, 99))
 torch.manual_seed(seed)
