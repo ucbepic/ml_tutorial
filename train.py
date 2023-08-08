@@ -81,7 +81,7 @@ with flor.checkpointing(model, optimizer):
             loss.backward()
             optimizer.step()
 
-            if (i + 1) % 100 == 0:
+            if (i + 1) % 500 == 0:
                 print(
                     "Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}".format(
                         epoch + 1,
