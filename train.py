@@ -5,7 +5,6 @@ import torchvision.transforms as transforms
 import torch.utils.data as torchdata
 
 import flor
-from flor import MTK as Flor
 
 # Device configuration
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -57,35 +56,33 @@ model = NeuralNet(input_size, hidden_size, num_classes).to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
-Flor.checkpoints(model, optimizer)
+with flor.checkpointing(model, optimizer):
+    # Train the model
+    for epoch in flor.layer("epoch", range(num_epochs)):
+        for i, (images, labels) in flor.layer("step", enumerate(train_loader)):
+            # Move tensors to the configured device
+            images = images.reshape(-1, 28 * 28).to(device)
+            labels = labels.to(device)
 
-# Train the model
-total_step = len(train_loader)
-for epoch in Flor.loop(range(num_epochs)):
-    for i, (images, labels) in Flor.loop(enumerate(train_loader)):
-        # Move tensors to the configured device
-        images = images.reshape(-1, 28 * 28).to(device)
-        labels = labels.to(device)
+            # Forward pass
+            outputs = model(images)
+            loss = criterion(outputs, labels)
 
-        # Forward pass
-        outputs = model(images)
-        loss = criterion(outputs, labels)
+            # Backward and optimize
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
 
-        # Backward and optimize
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
-
-        if (i + 1) % 100 == 0:
-            print(
-                "Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}".format(
-                    epoch + 1,
-                    num_epochs,
-                    i + 1,
-                    total_step,
-                    flor.log("loss", loss.item()),
+            if (i + 1) % 100 == 0:
+                print(
+                    "Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}".format(
+                        epoch + 1,
+                        num_epochs,
+                        i + 1,
+                        len(train_loader),
+                        flor.log("loss", loss.item()),
+                    )
                 )
-            )
 
 # Test the model
 # In test phase, we don't need to compute gradients (for memory efficiency)
