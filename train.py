@@ -7,7 +7,7 @@ import torch.utils.data as torchdata
 import flor
 
 # Device configuration
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda" if torch.cuda.is_available() else "metal")
 
 # Hyper-parameters
 input_size = 784
