@@ -100,6 +100,6 @@ with torch.no_grad():
 
     print(
         "Accuracy of the network on the 10000 test images: {} %".format(
-            100 * correct / total
+            flor.log("accuracy", 100 * correct / total)
         )
     )
