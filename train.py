@@ -7,7 +7,10 @@ import torch.utils.data as torchdata
 import flor
 
 # Device configuration
-device = torch.device("cuda" if torch.cuda.is_available() else "mps")
+try:
+    device = torch.device("cuda" if torch.cuda.is_available() else "mps")
+except:
+    device = torch.device("cpu")
 
 # Hyper-parameters
 input_size = 784
