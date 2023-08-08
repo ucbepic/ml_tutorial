@@ -64,6 +64,8 @@ model = NeuralNet(input_size, hidden_size, num_classes).to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
+print_every = flor.arg("print_every", 500)
+
 with flor.checkpointing(model, optimizer):
     # Train the model
     for epoch in flor.layer("epoch", range(num_epochs)):
@@ -81,7 +83,7 @@ with flor.checkpointing(model, optimizer):
             loss.backward()
             optimizer.step()
 
-            if (i + 1) % 500 == 0:
+            if (i + 1) % print_every == 0:
                 print(
                     "Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}".format(
                         epoch + 1,
