@@ -16,6 +16,7 @@ except:
 
 
 seed = flor.arg("seed", default=random.randint(1, 99))
+torch.manual_seed(seed)
 
 # Hyper-parameters
 input_size = 784
