@@ -4,6 +4,8 @@ import torchvision
 import torchvision.transforms as transforms
 import torch.utils.data as torchdata
 
+import random
+
 import flor
 
 # Device configuration
@@ -11,6 +13,9 @@ try:
     device = torch.device("cuda" if torch.cuda.is_available() else "mps")
 except:
     device = torch.device("cpu")
+
+
+seed = flor.arg("seed", default=random.randint(1, 99))
 
 # Hyper-parameters
 input_size = 784
