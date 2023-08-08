@@ -85,15 +85,7 @@ with flor.checkpointing(model, optimizer):
             optimizer.step()
 
             if (i + 1) % print_every == 0:
-                print(
-                    "Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}".format(
-                        epoch + 1,
-                        num_epochs,
-                        i + 1,
-                        len(train_loader),
-                        flor.log("loss", loss.item()),
-                    )
-                )
+                flor.log("loss", loss.item())
 
 # Test the model
 # In test phase, we don't need to compute gradients (for memory efficiency)
