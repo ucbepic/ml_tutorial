@@ -1,0 +1,24 @@
+device: cpu
+seed: 5
+hidden: 500
+epochs: 5
+batch_size: 32
+lr: 0.001
+print_every: 500
+epoch: 1, step: 500, loss: 0.10807386785745621
+epoch: 1, step: 1000, loss: 0.12983301281929016
+epoch: 1, step: 1500, loss: 0.07653814554214478
+epoch: 2, step: 500, loss: 0.048624228686094284
+epoch: 2, step: 1000, loss: 0.029267698526382446
+epoch: 2, step: 1500, loss: 0.016528047621250153
+epoch: 3, step: 500, loss: 0.006921178195625544
+epoch: 3, step: 1000, loss: 0.13249731063842773
+epoch: 3, step: 1500, loss: 0.004394721705466509
+epoch: 4, step: 500, loss: 0.2248721420764923
+epoch: 4, step: 1000, loss: 0.005076576955616474
+epoch: 4, step: 1500, loss: 0.10974828153848648
+epoch: 5, step: 500, loss: 0.0026324668433517218
+epoch: 5, step: 1000, loss: 0.07538387179374695
+epoch: 5, step: 1500, loss: 0.0008203962934203446
+accuracy: 97.77
+PROJID: ml_tutorial, BRANCH: flor.shadow, TSTAMP: 2023-08-08T20:38:12
