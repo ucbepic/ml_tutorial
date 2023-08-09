@@ -66,9 +66,8 @@ optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 print_every = flor.arg("print_every", 500)
 
 with flor.checkpointing(model, optimizer):
-    # Train the model
-    for epoch in flor.layer("epoch", range(num_epochs)):
-        for i, (images, labels) in flor.layer("step", enumerate(train_loader)):
+    for epoch in flor.loop("epoch", range(num_epochs)):
+        for i, (images, labels) in flor.loop("step", enumerate(train_loader)):
             # Move tensors to the configured device
             images = images.reshape(-1, 28 * 28).to(device)
             labels = labels.to(device)
