@@ -1,0 +1,212 @@
+[
+  {
+    "value_name": "device",
+    "value": "cpu"
+  },
+  {
+    "value_name": "seed",
+    "value": 57
+  },
+  {
+    "value_name": "hidden",
+    "value": 500
+  },
+  {
+    "value_name": "epochs",
+    "value": 5
+  },
+  {
+    "value_name": "batch_size",
+    "value": 32
+  },
+  {
+    "value_name": "lr",
+    "value": 0.001
+  },
+  {
+    "value_name": "print_every",
+    "value": 500
+  },
+  {
+    "value_name": "enter::epoch",
+    "value": "2023-08-17T14:08:13"
+  },
+  {
+    "epoch": 1,
+    "value_name": "enter::step",
+    "value": "2023-08-17T14:08:13"
+  },
+  {
+    "epoch": 1,
+    "step": 500,
+    "value_name": "loss",
+    "value": 0.4693834185600281
+  },
+  {
+    "epoch": 1,
+    "step": 1000,
+    "value_name": "loss",
+    "value": 0.23906421661376953
+  },
+  {
+    "epoch": 1,
+    "step": 1500,
+    "value_name": "loss",
+    "value": 0.04958555847406387
+  },
+  {
+    "epoch": 1,
+    "value_name": "exit::step",
+    "value": "2023-08-17T14:08:16"
+  },
+  {
+    "epoch": 1,
+    "value_name": "auto::secs",
+    "value": 3.070801833004225
+  },
+  {
+    "epoch": 2,
+    "value_name": "enter::step",
+    "value": "2023-08-17T14:08:16"
+  },
+  {
+    "epoch": 2,
+    "step": 500,
+    "value_name": "loss",
+    "value": 0.08589670062065125
+  },
+  {
+    "epoch": 2,
+    "step": 1000,
+    "value_name": "loss",
+    "value": 0.23908886313438416
+  },
+  {
+    "epoch": 2,
+    "step": 1500,
+    "value_name": "loss",
+    "value": 0.009208491072058678
+  },
+  {
+    "epoch": 2,
+    "value_name": "exit::step",
+    "value": "2023-08-17T14:08:19"
+  },
+  {
+    "epoch": 2,
+    "value_name": "auto::secs",
+    "value": 3.0494048330001533
+  },
+  {
+    "epoch": 3,
+    "value_name": "enter::step",
+    "value": "2023-08-17T14:08:19"
+  },
+  {
+    "epoch": 3,
+    "step": 500,
+    "value_name": "loss",
+    "value": 0.011008170433342457
+  },
+  {
+    "epoch": 3,
+    "step": 1000,
+    "value_name": "loss",
+    "value": 0.007597841322422028
+  },
+  {
+    "epoch": 3,
+    "step": 1500,
+    "value_name": "loss",
+    "value": 0.19340486824512482
+  },
+  {
+    "epoch": 3,
+    "value_name": "exit::step",
+    "value": "2023-08-17T14:08:22"
+  },
+  {
+    "epoch": 3,
+    "value_name": "auto::secs",
+    "value": 3.0664736249600537
+  },
+  {
+    "epoch": 4,
+    "value_name": "enter::step",
+    "value": "2023-08-17T14:08:22"
+  },
+  {
+    "epoch": 4,
+    "step": 500,
+    "value_name": "loss",
+    "value": 0.007546514272689819
+  },
+  {
+    "epoch": 4,
+    "step": 1000,
+    "value_name": "loss",
+    "value": 0.269229918718338
+  },
+  {
+    "epoch": 4,
+    "step": 1500,
+    "value_name": "loss",
+    "value": 0.0020167117472738028
+  },
+  {
+    "epoch": 4,
+    "value_name": "exit::step",
+    "value": "2023-08-17T14:08:25"
+  },
+  {
+    "epoch": 4,
+    "value_name": "auto::secs",
+    "value": 3.098762334033381
+  },
+  {
+    "epoch": 5,
+    "value_name": "enter::step",
+    "value": "2023-08-17T14:08:25"
+  },
+  {
+    "epoch": 5,
+    "step": 500,
+    "value_name": "loss",
+    "value": 0.0021609063260257244
+  },
+  {
+    "epoch": 5,
+    "step": 1000,
+    "value_name": "loss",
+    "value": 0.07165219634771347
+  },
+  {
+    "epoch": 5,
+    "step": 1500,
+    "value_name": "loss",
+    "value": 0.02679169550538063
+  },
+  {
+    "epoch": 5,
+    "value_name": "exit::step",
+    "value": "2023-08-17T14:08:28"
+  },
+  {
+    "epoch": 5,
+    "value_name": "auto::secs",
+    "value": 3.1051182909868658
+  },
+  {
+    "value_name": "exit::epoch",
+    "value": "2023-08-17T14:08:28"
+  },
+  {
+    "value_name": "accuracy",
+    "value": 97.94
+  },
+  {
+    "PROJID": "ml_tutorial",
+    "TSTAMP": "2023-08-17T14:08:13",
+    "FILENAME": "train.py"
+  }
+]
