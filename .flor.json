@@ -5,7 +5,7 @@
   },
   {
     "value_name": "seed",
-    "value": 57
+    "value": 58
   },
   {
     "value_name": "hidden",
@@ -13,7 +13,7 @@
   },
   {
     "value_name": "epochs",
-    "value": 5
+    "value": 10
   },
   {
     "value_name": "batch_size",
@@ -29,184 +29,353 @@
   },
   {
     "value_name": "enter::epoch",
-    "value": "2023-08-17T14:08:13"
+    "value": "2023-08-17T14:22:51"
   },
   {
     "epoch": 1,
     "value_name": "enter::step",
-    "value": "2023-08-17T14:08:13"
+    "value": "2023-08-17T14:22:51"
   },
   {
     "epoch": 1,
     "step": 500,
     "value_name": "loss",
-    "value": 0.4693834185600281
+    "value": 0.2315640151500702
   },
   {
     "epoch": 1,
     "step": 1000,
     "value_name": "loss",
-    "value": 0.23906421661376953
+    "value": 0.12427712976932526
   },
   {
     "epoch": 1,
     "step": 1500,
     "value_name": "loss",
-    "value": 0.04958555847406387
+    "value": 0.04844927042722702
   },
   {
     "epoch": 1,
     "value_name": "exit::step",
-    "value": "2023-08-17T14:08:16"
+    "value": "2023-08-17T14:22:54"
   },
   {
     "epoch": 1,
     "value_name": "auto::secs",
-    "value": 3.070801833004225
+    "value": 3.093424667022191
   },
   {
     "epoch": 2,
     "value_name": "enter::step",
-    "value": "2023-08-17T14:08:16"
+    "value": "2023-08-17T14:22:54"
   },
   {
     "epoch": 2,
     "step": 500,
     "value_name": "loss",
-    "value": 0.08589670062065125
+    "value": 0.01740141212940216
   },
   {
     "epoch": 2,
     "step": 1000,
     "value_name": "loss",
-    "value": 0.23908886313438416
+    "value": 0.039608605206012726
   },
   {
     "epoch": 2,
     "step": 1500,
     "value_name": "loss",
-    "value": 0.009208491072058678
+    "value": 0.057407185435295105
   },
   {
     "epoch": 2,
     "value_name": "exit::step",
-    "value": "2023-08-17T14:08:19"
+    "value": "2023-08-17T14:22:57"
   },
   {
     "epoch": 2,
     "value_name": "auto::secs",
-    "value": 3.0494048330001533
+    "value": 3.071538833028171
   },
   {
     "epoch": 3,
     "value_name": "enter::step",
-    "value": "2023-08-17T14:08:19"
+    "value": "2023-08-17T14:22:57"
   },
   {
     "epoch": 3,
     "step": 500,
     "value_name": "loss",
-    "value": 0.011008170433342457
+    "value": 0.005613602697849274
   },
   {
     "epoch": 3,
     "step": 1000,
     "value_name": "loss",
-    "value": 0.007597841322422028
+    "value": 0.0153215192258358
   },
   {
     "epoch": 3,
     "step": 1500,
     "value_name": "loss",
-    "value": 0.19340486824512482
+    "value": 0.04630310460925102
   },
   {
     "epoch": 3,
     "value_name": "exit::step",
-    "value": "2023-08-17T14:08:22"
+    "value": "2023-08-17T14:23:01"
   },
   {
     "epoch": 3,
     "value_name": "auto::secs",
-    "value": 3.0664736249600537
+    "value": 3.083599957986735
   },
   {
     "epoch": 4,
     "value_name": "enter::step",
-    "value": "2023-08-17T14:08:22"
+    "value": "2023-08-17T14:23:01"
   },
   {
     "epoch": 4,
     "step": 500,
     "value_name": "loss",
-    "value": 0.007546514272689819
+    "value": 0.0037408508360385895
   },
   {
     "epoch": 4,
     "step": 1000,
     "value_name": "loss",
-    "value": 0.269229918718338
+    "value": 0.01911848969757557
   },
   {
     "epoch": 4,
     "step": 1500,
     "value_name": "loss",
-    "value": 0.0020167117472738028
+    "value": 0.06216894090175629
   },
   {
     "epoch": 4,
     "value_name": "exit::step",
-    "value": "2023-08-17T14:08:25"
+    "value": "2023-08-17T14:23:04"
   },
   {
     "epoch": 4,
     "value_name": "auto::secs",
-    "value": 3.098762334033381
+    "value": 3.1222054170211777
   },
   {
     "epoch": 5,
     "value_name": "enter::step",
-    "value": "2023-08-17T14:08:25"
+    "value": "2023-08-17T14:23:04"
   },
   {
     "epoch": 5,
     "step": 500,
     "value_name": "loss",
-    "value": 0.0021609063260257244
+    "value": 0.0008218444418162107
   },
   {
     "epoch": 5,
     "step": 1000,
     "value_name": "loss",
-    "value": 0.07165219634771347
+    "value": 0.19994068145751953
   },
   {
     "epoch": 5,
     "step": 1500,
     "value_name": "loss",
-    "value": 0.02679169550538063
+    "value": 0.003948310390114784
   },
   {
     "epoch": 5,
     "value_name": "exit::step",
-    "value": "2023-08-17T14:08:28"
+    "value": "2023-08-17T14:23:07"
   },
   {
     "epoch": 5,
     "value_name": "auto::secs",
-    "value": 3.1051182909868658
+    "value": 3.1340934580075555
+  },
+  {
+    "epoch": 6,
+    "value_name": "enter::step",
+    "value": "2023-08-17T14:23:07"
+  },
+  {
+    "epoch": 6,
+    "step": 500,
+    "value_name": "loss",
+    "value": 0.07840026915073395
+  },
+  {
+    "epoch": 6,
+    "step": 1000,
+    "value_name": "loss",
+    "value": 0.008245275355875492
+  },
+  {
+    "epoch": 6,
+    "step": 1500,
+    "value_name": "loss",
+    "value": 0.0013542714295908809
+  },
+  {
+    "epoch": 6,
+    "value_name": "exit::step",
+    "value": "2023-08-17T14:23:10"
+  },
+  {
+    "epoch": 6,
+    "value_name": "auto::secs",
+    "value": 3.2838843329809606
+  },
+  {
+    "epoch": 7,
+    "value_name": "enter::step",
+    "value": "2023-08-17T14:23:10"
+  },
+  {
+    "epoch": 7,
+    "step": 500,
+    "value_name": "loss",
+    "value": 0.025536686182022095
+  },
+  {
+    "epoch": 7,
+    "step": 1000,
+    "value_name": "loss",
+    "value": 0.01483781449496746
+  },
+  {
+    "epoch": 7,
+    "step": 1500,
+    "value_name": "loss",
+    "value": 0.031040243804454803
+  },
+  {
+    "epoch": 7,
+    "value_name": "exit::step",
+    "value": "2023-08-17T14:23:13"
+  },
+  {
+    "epoch": 7,
+    "value_name": "auto::secs",
+    "value": 3.3342265830142424
+  },
+  {
+    "epoch": 8,
+    "value_name": "enter::step",
+    "value": "2023-08-17T14:23:13"
+  },
+  {
+    "epoch": 8,
+    "step": 500,
+    "value_name": "loss",
+    "value": 0.15119537711143494
+  },
+  {
+    "epoch": 8,
+    "step": 1000,
+    "value_name": "loss",
+    "value": 0.0003154597070533782
+  },
+  {
+    "epoch": 8,
+    "step": 1500,
+    "value_name": "loss",
+    "value": 0.00021755765192210674
+  },
+  {
+    "epoch": 8,
+    "value_name": "exit::step",
+    "value": "2023-08-17T14:23:17"
+  },
+  {
+    "epoch": 8,
+    "value_name": "auto::secs",
+    "value": 3.2891894999775104
+  },
+  {
+    "epoch": 9,
+    "value_name": "enter::step",
+    "value": "2023-08-17T14:23:17"
+  },
+  {
+    "epoch": 9,
+    "step": 500,
+    "value_name": "loss",
+    "value": 0.004337488207966089
+  },
+  {
+    "epoch": 9,
+    "step": 1000,
+    "value_name": "loss",
+    "value": 0.0034062578342854977
+  },
+  {
+    "epoch": 9,
+    "step": 1500,
+    "value_name": "loss",
+    "value": 0.0011561140418052673
+  },
+  {
+    "epoch": 9,
+    "value_name": "exit::step",
+    "value": "2023-08-17T14:23:20"
+  },
+  {
+    "epoch": 9,
+    "value_name": "auto::secs",
+    "value": 3.649579458986409
+  },
+  {
+    "epoch": 10,
+    "value_name": "enter::step",
+    "value": "2023-08-17T14:23:20"
+  },
+  {
+    "epoch": 10,
+    "step": 500,
+    "value_name": "loss",
+    "value": 0.007352178916335106
+  },
+  {
+    "epoch": 10,
+    "step": 1000,
+    "value_name": "loss",
+    "value": 0.003232243936508894
+  },
+  {
+    "epoch": 10,
+    "step": 1500,
+    "value_name": "loss",
+    "value": 2.1943849787930958e-05
+  },
+  {
+    "epoch": 10,
+    "value_name": "exit::step",
+    "value": "2023-08-17T14:23:24"
+  },
+  {
+    "epoch": 10,
+    "value_name": "auto::secs",
+    "value": 3.356761666946113
   },
   {
     "value_name": "exit::epoch",
-    "value": "2023-08-17T14:08:28"
+    "value": "2023-08-17T14:23:24"
   },
   {
     "value_name": "accuracy",
-    "value": 97.94
+    "value": 97.65
+  },
+  {
+    "value_name": "correct",
+    "value": 9765
   },
   {
     "PROJID": "ml_tutorial",
-    "TSTAMP": "2023-08-17T14:08:13",
+    "TSTAMP": "2023-08-17T14:22:51",
     "FILENAME": "train.py"
   }
 ]
