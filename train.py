@@ -98,3 +98,4 @@ with torch.no_grad():
         correct += (predicted == labels).sum().item()
 
     flor.log("accuracy", 100 * correct / total)
+    flor.log("correct", correct)
