@@ -39,7 +39,7 @@ train_loader = torchdata.DataLoader(
 )
 
 test_loader = torchdata.DataLoader(
-    dataset=test_dataset, batch_size=batch_size, shuffle=False
+    dataset=test_dataset, batch_size=batch_size, shuffle=True
 )
 
 # Fully connected neural network with one hidden layer
