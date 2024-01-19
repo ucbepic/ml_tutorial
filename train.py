@@ -11,7 +11,14 @@ import flor
 
 # Device configuration
 device = torch.device(
-    flor.arg("device", "cuda" if torch.cuda.is_available() else "cpu")
+    flor.arg(
+        "device",
+        "mps"
+        if torch.backends.mps.is_available()
+        else "cuda"
+        if torch.cuda.is_available()
+        else "cpu",
+    )
 )
 
 seed = flor.arg("seed", default=random.randint(1, 99))
@@ -39,9 +46,8 @@ train_loader = torchdata.DataLoader(
     dataset=train_dataset, batch_size=batch_size, shuffle=True
 )
 
-test_loader = torchdata.DataLoader(
-    dataset=test_dataset, batch_size=batch_size
-)
+test_loader = torchdata.DataLoader(dataset=test_dataset, batch_size=batch_size)
+
 
 # Fully connected neural network with one hidden layer
 class NeuralNet(nn.Module):
@@ -64,14 +70,14 @@ model = NeuralNet(input_size, hidden_size, num_classes).to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
+
 def get_val_loader(fraction=0.2):
     indices = list(range(len(test_dataset)))
     np.random.shuffle(indices)
     split = int(np.floor(fraction * len(test_dataset)))
-    subset_indices =  indices[:split]
+    subset_indices = indices[:split]
     sampler = torchdata.SubsetRandomSampler(subset_indices)
     return torchdata.DataLoader(test_dataset, sampler=sampler, batch_size=batch_size)
-
 
 
 def validate(val_loader: torchdata.DataLoader):
@@ -110,10 +116,9 @@ with flor.checkpointing(model=model, optimizer=optimizer):
 
             if (i + 1) % print_every == 0:
                 flor.log("loss", loss.item())
-        
+
         correct, total = validate(get_val_loader())
         flor.log("val_acc", 100 * correct / total)
-
 
 
 correct, total = validate(test_loader)
