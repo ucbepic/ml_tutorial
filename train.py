@@ -4,7 +4,7 @@ import torchvision
 import torchvision.transforms as transforms
 import torch.utils.data as torchdata
 
-import random
+from random import randint
 import numpy as np
 
 import flor
@@ -21,7 +21,7 @@ device = torch.device(
     )
 )
 
-seed = flor.arg("seed", default=random.randint(1, 99))
+seed = flor.arg("seed", default=randint(1, 1e10))
 torch.manual_seed(seed)
 
 # Hyper-parameters
@@ -59,8 +59,8 @@ class NeuralNet(nn.Module):
 
     def forward(self, x):
         out = self.fc1(x)
-        out = self.relu(out)
         out = self.fc2(out)
+        out = self.relu(out)
         return out
 
 
